@@ -1,4 +1,4 @@
-const { skipper } = require("../framework/skipper");
+const { popkid } = require("../framework/popkid");
 const moment = require("moment-timezone");
 const { default: axios } = require('axios');
 //const conf = require('../set');
