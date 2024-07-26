@@ -1,4 +1,4 @@
-const { skipper } = require('../framework/skipper');
+const { popkid } = require('../framework/popkid');
 const { attribuerUnevaleur } = require('../bdd/welcome');
 
 async function events(nomCom) {
