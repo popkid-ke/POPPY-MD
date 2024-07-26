@@ -1,14 +1,14 @@
-const { skipper } = require("../framework/skipper");
+const { popkid } = require("../framework/popkid");
 const fancy = require("../commandes/style");
 
-skipper({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
+popkid({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
     const { arg, repondre, prefixe } = commandeOptions;
     const id = arg[0]?.match(/\d+/)?.join('');
     const text = arg.slice(1).join(" ");
 
     try {
         if (id === undefined || text === undefined) {
-            return await repondre(`\nExample : ${prefixe}fancy 10 Skipper-Md\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('SKIPPER-MD', fancy));
+            return await repondre(`\nExample : ${prefixe}fancy 10 Poppy-Md\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('POPPY-MD', fancy));
         }
 
         const selectedStyle = fancy[parseInt(id) - 1];
