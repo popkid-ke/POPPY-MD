@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-const { skipper } = require("../framework/skipper");
+const { popkid } = require("../framework/popkid");
 const { writeFile } = require('fs/promises')
 
 // Commande waifu
