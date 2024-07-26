@@ -1,6 +1,6 @@
 var tabCmds = [];
 let cm = [];
-function skipper(obj, fonctions) {
+function popkid(obj, fonctions) {
     let infoComs = obj;
     if (!obj.categorie) {
         infoComs.categorie = "General";
@@ -13,4 +13,4 @@ function skipper(obj, fonctions) {
     // console.log('chargement...')
     return infoComs;
 }
-module.exports = { skipper, Module: skipper, cm };
+module.exports = { skipper, Module: popkid, cm };
