@@ -1,5 +1,5 @@
 const axios = require("axios");
-const {skipper} = require("../framework/skipper");
+const {popkid} = require("../framework/popkid");
 const traduire = require("../framework/traduction");
 const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 
@@ -145,7 +145,7 @@ skipper({
       // Si la requête a réussi, envoyez l'image résultante
       
       let stickerMess = new Sticker(response.data.result, {
-        pack: SKIPPER-MD,
+        pack: POPPY-MD,
         type: StickerTypes.CROPPED,
         categories: ["🤩", "🎉"],
         id: "12345",
