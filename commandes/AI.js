@@ -1,4 +1,4 @@
-const { skipper } = require('../framework/skipper');
+const { popkid } = require('../framework/popkid');
 const traduire = require("../framework/traduction") ;
 const axios = require('axios');
 
@@ -58,7 +58,7 @@ skipper({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk,
     const response = await axios.get(`https://vihangayt.me/tools/photoleap?q=${image}`);
     
     const data = response.data;
-    let caption = '*Propulsé par SKIPPER-MD*';
+    let caption = '*Propulsé par POPPY-MD*';
     
     if (data.status && data.owner && data.data) {
       // Utiliser les données retournées par le service
@@ -73,7 +73,7 @@ skipper({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk,
   }
 });
 
-skipper({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+popkid({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
