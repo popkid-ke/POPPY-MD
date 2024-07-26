@@ -1,4 +1,4 @@
-const { skipper } = require("../framework/skipper");
+const { popkid } = require("../framework/popkid");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
 const conf = require("../set");
 
@@ -15,7 +15,7 @@ skipper({ nomCom: "owner", categorie: "General", reaction: "💞" }, async (dest
 ------ *other sudos* -----\n`
      
  let sudos = await getAllSudoNumbers()
-// IT IS SKIPPER-MD
+// IT IS POPKID-MD
    for ( const sudo of sudos) {
     if (sudo) { // Vérification plus stricte pour éliminer les valeurs vides ou indéfinies
       sudonumero = sudo.replace(/[^0-9]/g, '');
@@ -55,14 +55,14 @@ skipper({ nomCom: "dev", categorie: "General", reaction: "💞" }, async (dest, 
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Tonny408", numero: "254798780465" },
-      { nom: "᚛Brashokish᚜", numero: "254735905972" },
-      { nom: "ⁱ𝐌𝐆𝐓𝐎𝐏𝐇𝐀𝐙!-)ᵈ× :", numero: "254705243111" },
+      { nom: "POPKID", numero: "254111385747" },
+      { nom: "᚛IANO᚜", numero: "254732297194" },
+      { nom: "ⁱKING!-)ᵈ× :", numero: "254705243111" },
         
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "👋 *Welcome to Skipper-Md!* here is the developer numbers:\n\n";
+    let message = "👋 *Welcome to POPPY-MD!* here is the developer numbers:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -97,7 +97,7 @@ skipper({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOp
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("look on pm sir ")
-  await zk.sendMessage(auteurMessage,{text : `https://wa.me/254751284190`},{quoted :ms})
+  await zk.sendMessage(auteurMessage,{text : `https://wa.me/254111385747`},{quoted :ms})
 
 })
 
