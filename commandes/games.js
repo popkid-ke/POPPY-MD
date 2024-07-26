@@ -1,4 +1,4 @@
-const {skipper} = require("../framework/skipper");
+const {popkid} = require("../framework/popkid");
 const axios = require('axios');
 const traduire = require('../framework/traduction')
 
@@ -150,7 +150,7 @@ skipper(
          let quizz = await axios.get("https://quizzapi.jomoreschi.fr/api/v1/quiz?limit=1&difficulty=facile") ;
 
          
-   let msg = `     Skipper-Md-Quizz-Games
+   let msg = `     Popkid-Md-Quizz-Games
 
 *Category :* ${ await traduire(quizz.data.quizzes[0].category , {to : 'en'})}
 *Question :* ${ await traduire(quizz.data.quizzes[0].question, {to : 'en'})}\n\n*Answers :*\n`
