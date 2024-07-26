@@ -1,4 +1,4 @@
-const {skipper} =require("../framework/skipper");
+const {popkid} =require("../framework/popkid");
 const axios =require("axios");
 const Genius = require("genius-lyrics"); 
  const Client = new Genius.Client("jKTbbU-6X2B9yWWl-KOm7Mh3_Z6hQsgE4mmvwV3P3Qe7oNa9-hsrLxQV5l5FiAZO");
