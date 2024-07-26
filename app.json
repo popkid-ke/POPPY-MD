@@ -1,16 +1,16 @@
 {
-  "name":"SKIPPER-MD",
-  "description":"An easy and simple WhatsApp bot developed by Tonny 408",
+  "name":"POPPY-MD",
+  "description":"YOIR BEST WHATSAPP BOT DEVELOPED BY POPKID",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/a631aa36f6d9dfbe722e8.jpg",
-  "repository":"https://github.com/Tonny408/Skipper-Md",
+  "logo":"https://telegra.ph/file/29ad5348203648a5ebad9.jpg",
+  "repository":"https://github.com/popkid-ke/POPPY-MD",
   "succes_url":"/",
   "stack":"container",
   "env":{
     "PREFIX":
     {
       "description":"choose your prefix of bot",
-      "value":"#",
+      "value":".",
       "required":true
     },
     "AUTO_READ_STATUS":
@@ -35,14 +35,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"SKIPPER-MD",
+      "value":"POPPY-MD",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/a631aa36f6d9dfbe722e8.jpg",
+      "value":"https://telegra.ph/file/29ad5348203648a5ebad9.jpg",
       "required":false
        
      },
@@ -74,14 +74,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Tonny 408"
+    "value": "POPKID-KE"
   },
     "OWNER_NUMBER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254798780465"
+    "value": "254111385747"
   },
     "WARN_COUNT":
   {
