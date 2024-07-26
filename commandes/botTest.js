@@ -1,4 +1,4 @@
-const { skipper } = require("../framework/skipper");
+const { popkid } = require("../framework/popkid");
 const moment = require("moment-timezone");
 const { default: axios } = require('axios');
 //const conf = require('../set');
@@ -14,7 +14,7 @@ skipper({ nomCom: 'test',
   },
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
-    return repondre('*SKIPPER-MD is Alive!!!!!!!*\n ```' + powered by + '``` *Tonny 408*```') 
+    return repondre('*POPPY-MD is Alive!!!!!!!*\n ```' + powered by + '``` *POPKID-KE*```') 
   }
 )
  
