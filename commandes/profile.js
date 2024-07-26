@@ -1,4 +1,4 @@
-const {skipper} = require("../framework/skipper");
+const {poppy} = require("../framework/poppy");
 const conf = require("../set")
 const {jidDecode}=require("@whiskeysockets/baileys")
 
