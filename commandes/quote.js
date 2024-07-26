@@ -1,4 +1,4 @@
-const { skipper } = require('../framework/skipper');
+const { popkid } = require('../framework/popkid');
 
 skipper({ nomCom: 'quote', categorie: 'Fun' }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, verifGroupe, arg } = commandeOptions;
@@ -13,7 +13,7 @@ skipper({ nomCom: 'quote', categorie: 'Fun' }, async (dest, zk, commandeOptions)
         .then((response) => response.json())
         .then(async (quote) => {
           repondre(`╔══════════════════════════╗
-║   SKIPPPER-MD              ║
+║   POPPY-MD              ║
 ╚══════════════════════════╝
 
 🎬 Anime: ${quote.anime}
@@ -33,14 +33,14 @@ Powered by *Tonny 408*`);
         .then((response) => response.json())
         .then(async (quote) => {
           repondre(`╔══════════════════════════╗
-║   SKIPPER-MD               ║
+║   POPPY-MD               ║
 ╚══════════════════════════╝
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by SKIPPER-MD`);
+Powered by POPPY-MD`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
