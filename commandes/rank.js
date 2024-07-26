@@ -1,4 +1,4 @@
-const {skipper} = require("../framework/skipper");
+const {popkid} = require("../framework/popkid");
 const conf = require("../set");
 const {getMessagesAndXPByJID,getBottom10Users} = require("../bdd/level");
 
@@ -135,7 +135,7 @@ skipper( {
     
     
          let msg = `
-┏━━━┛ SKIPPER-MD Ranking┗━━━┓
+┏━━━┛ POPPY-MD Ranking┗━━━┓
          
     *Name :* @${auteurMsgRepondu.split("@")[0]}
     
@@ -211,7 +211,7 @@ skipper( {
     
     
          let msg = `
-┏━━━┛ SKIPPER-MD Ranking ┗━━━┓
+┏━━━┛ POPPY-MD Ranking ┗━━━┓
      
   *Name :* ${nomAuteurMessage}
 
@@ -252,7 +252,7 @@ skipper( {
     const {ms , arg, repondre,auteurMessage,nomAuteurMessage, msgRepondu , auteurMsgRepondu , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━━┛ SKIPPER-MD-top-rang ┗━━┓\n\n`
+       let msg = `┏━━┛ POPPY-MD-top-rang ┗━━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;
