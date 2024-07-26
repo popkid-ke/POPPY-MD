@@ -1,4 +1,4 @@
-const { skipper } = require('../framework/skipper');
+const { popkid } = require('../framework/popkid');
 const {ajouterUtilisateurAvecWarnCount , getWarnCountByJID , resetWarnCountByJID} = require('../bdd/warn')
 const s = require("../set")
 
