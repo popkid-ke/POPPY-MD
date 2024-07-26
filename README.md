@@ -30,7 +30,7 @@ Enjoy the diverse features of the POPPY-MD✨✨❤️  to enhance your conversa
 
 ## Developer:
 
-- [**TONNY408**](https://instagram.com/pop_kid254)
+- [**POP-KID254**](https://instagram.com/pop_kid254)
 - [**WhatsApp**](https://wa.me/254111385747)
 - [**POPKID-KE**]
 
