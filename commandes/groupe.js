@@ -1,6 +1,6 @@
 
 
-const { skipper } = require("../framework/skipper")
+const { popkid } = require("../framework/popkid")
 //const { getGroupe } = require("../bdd/groupe")
 const { Sticker, StickerTypes } = require('wa-sticker-formatter');
 const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../bdd/antilien")
@@ -31,7 +31,7 @@ skipper({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest,
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *SKIPPER-MD* 🌟
+        🌟 *POPKID-MD* 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Author : *${nomAuteurMessage}* 👋 
@@ -250,7 +250,7 @@ skipper({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, a
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Skipper-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'SKIPPER-MD', // The pack name
+                pack: 'POPPY-MD', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -698,7 +698,7 @@ skipper({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,comma
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'SKIPPER-MD-tag',
+          pack: 'POPPY-MD-tag',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -764,7 +764,7 @@ skipper({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest,
 
     const downloadLink = appData.dllink;
     const captionText =
-      "『 *SKIPPER-MD App* 』\n\n*Name :* " + appData.name +
+      "『 *POPPY-MD App* 』\n\n*Name :* " + appData.name +
       "\n*Id :* " + appData["package"] +
       "\n*Last Update :* " + appData.lastup +
       "\n*Size :* " + appData.size +
