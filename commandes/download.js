@@ -1,4 +1,4 @@
-const {skipper} = require('../framework/skipper');
+const {popkid} = require('../framework/popkid');
 const fs = require('fs');
 const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
